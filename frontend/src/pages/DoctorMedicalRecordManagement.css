@@ -1,0 +1,27 @@
+/* =========================================================
+   DOCTOR MEDICAL RECORD MANAGEMENT (MANAGER PANEL UI THEME)
+========================================================= */
+
+@import "./DoctorDashboard.css";
+
+.page-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.page-header-row h2 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.page-header-row p {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}

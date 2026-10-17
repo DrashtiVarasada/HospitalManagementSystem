@@ -1,0 +1,164 @@
+.receptionist-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+/* SIDEBAR */
+
+.receptionist-sidebar {
+    width: 240px;
+    min-height: 100vh;
+
+    background: #ffffff;
+
+    border-right: 1px solid #e5e7eb;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 15px;
+}
+
+/* LOGO */
+
+.receptionist-logo {
+    padding: 5px 10px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.receptionist-logo h2 {
+    margin: 0;
+    font-size: 21px;
+}
+
+.receptionist-logo p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* NAVIGATION */
+
+.receptionist-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    margin-top: 25px;
+}
+
+.receptionist-nav-link {
+    text-decoration: none;
+
+    color: #374151;
+
+    padding: 11px 13px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.receptionist-nav-link:hover {
+    background: #f1f5f9;
+}
+
+.receptionist-nav-link.active {
+    background: #2563eb;
+    color: white;
+}
+
+/* LOGOUT */
+
+.receptionist-logout-btn {
+    margin-top: auto;
+
+    border: none;
+
+    background: #ef4444;
+    color: white;
+
+    padding: 11px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.receptionist-logout-btn:hover {
+    background: #dc2626;
+}
+
+/* MAIN */
+
+.receptionist-main {
+    flex: 1;
+
+    min-width: 0;
+}
+
+/* TOP BAR */
+
+.receptionist-topbar {
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    padding: 18px 25px;
+}
+
+.receptionist-topbar h3 {
+    margin: 0;
+    font-size: 19px;
+}
+
+.receptionist-topbar p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+/* CONTENT */
+
+.receptionist-content {
+    padding: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .receptionist-sidebar {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .receptionist-layout {
+        flex-direction: column;
+    }
+
+    .receptionist-sidebar {
+        width: auto;
+        min-height: auto;
+    }
+
+    .receptionist-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .receptionist-logout-btn {
+        margin-top: 15px;
+    }
+
+}

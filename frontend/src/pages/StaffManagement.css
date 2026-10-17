@@ -1,0 +1,269 @@
+.staff-page {
+    width: 100%;
+}
+
+.page-heading {
+    margin-bottom: 22px;
+}
+
+.page-heading h2 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 24px;
+}
+
+.page-heading p {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.staff-message {
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.staff-message.error {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.staff-message.success {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.staff-form-card,
+.staff-table-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title h3 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 18px;
+}
+
+.section-title span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.staff-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: #2563eb;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+.primary-button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+
+.secondary-button {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f8fafc;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+td {
+    padding: 13px 12px;
+    color: #475569;
+    font-size: 13px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+td strong {
+    color: #1e293b;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.status.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status.inactive {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 7px;
+}
+
+.edit-button,
+.delete-button {
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.edit-button {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.delete-button {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.table-loading,
+.empty-state {
+    text-align: center;
+    padding: 35px;
+    color: #64748b;
+}
+
+/* Account Form */
+
+.account-form-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 25px;
+}
+
+.account-info {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.account-info strong {
+    color: #1e293b;
+}
+
+.close-account-button {
+    border: none;
+    background: transparent;
+    color: #64748b;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-account-button:hover {
+    color: #dc2626;
+}
+
+.account-button {
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.account-button:hover {
+    background: #dcfce7;
+}
+
+@media (max-width: 700px) {
+
+    .staff-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-form-card,
+    .staff-table-card,
+    .account-form-card {
+        padding: 15px;
+    }
+
+    .action-buttons {
+        flex-wrap: wrap;
+    }
+}
